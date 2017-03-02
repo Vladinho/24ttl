@@ -1,0 +1,58 @@
+.tools
+	position relative
+	z-index 0
+	user-select none
+
+	&-container
+		padding 53px 95px 52px
+		background-color #dcd9c0
+
+	&__slider
+		width 100%
+		height 95px
+
+		&-prev
+		&-next
+			position absolute
+			top 44px
+			border-top 8px solid $trn
+			border-bottom 8px solid $trn
+			cursor pointer
+
+		&-prev
+			right 116px
+			border-right 10px solid #fff
+
+		&-next
+			right 51px
+			border-left 10px solid #fff
+
+
+	&__slide
+		display table-cell
+		vertical-align middle
+
+		img
+			width 100%
+			display inline-block
+
+@media only screen and (max-width: 320px)
+	.tools
+
+		&-container
+			padding 40px 20px 40px
+
+		&__slider
+			height 70px
+
+			&-next
+			&-prev
+				top 17px
+
+			&-next
+				right 21px
+
+			&-prev
+				right 62px
+		&__slide
+			size(70px)

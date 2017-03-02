@@ -1,0 +1,56 @@
+mixin serviceItem(obj)
+	.service__item
+
+		img.service__item-img(src= obj.img)
+
+		.service__item-wrap
+			h2.service__item-title(class= obj.titleMod ? obj.titleMod : "")!= obj.title
+			.service__item-separator(class= obj.sepMod ? obj.sepMod : "" role="separator")
+			p.service__item-text(class= obj.textMod ? obj.textMod : "")!= obj.text
+			.service__item-btn(class= obj.btnMod ? obj.btnMod : "")
+
+section#services.service
+
+	+serviceItem({
+		img: "assets/images/content/service-img5.jpg",
+		title: "Диджитал-стратегия",
+		sepMod: "service__item-separator_color_white",
+		titleMod: "service__item-title_color_white service__item-title_w_a",
+		textMod: "service__item-text_color_white",
+		text: "Разработка стратегии продвижения бизнеса в&nbsp;сети Интернет, комплексный подход к&nbsp;планированию и&nbsp;реализации маркетинговых мероприятий с&nbsp;учетом индивидуальных особенностей компании-заказчика."
+	})
+
+	+serviceItem({
+		img: "assets/images/content/service-img4.jpg",
+		title: "SEO и SMO",
+		text: "Выводим сайт на топовые позиции в&nbsp;результатах, оптимизируем содержание сайта, делаем каждую веб&nbsp-&nbspстраницу полезной и&nbsp;удобной для пользователя. "
+	})
+
+	+serviceItem({
+		img: "assets/images/content/service-img2.jpg",
+		title: "Поддержка проектов",
+		text: "Мониторинг и&nbsp;управление контентом, модернизация веб-ресурсов, внедрение нового функционала, техническая поддержка в&nbsp;режиме&nbsp;24/7"
+	})
+
+	+serviceItem({
+		img: "assets/images/content/service-img1.jpg",
+		title: "Разработка веб&nbsp;-&nbsp;решений для&nbsp;бизнеса",
+		sepMod: "service__item-separator_color_white",
+		titleMod: "service__item-title_color_white service__item-title_w_a",
+		textMod: "service__item-text_color_white",
+		text: "Создание новых технологических решений для&nbsp;вашего бизнеса, оптимизация и&nbsp;сопровождение существующих проектов, интеграфия систем CRM и&nbsp;ERP, веб-разработка E-commerce полного цикла."
+	})
+
+	//+serviceItem({
+		img: "assets/images/content/service-img3.jpg",
+		title: "Social SEO",
+		btnMod: "service__item-btn_color_black",
+		text: "Оптимизируем группы в&nbsp;соцсетях и&nbsp;блоги для увеличения конверсии пользователей, привлечения новых клиентов и&nbsp;большей узнаваемости бренда в&nbsp;Сети."
+	//})
+
+	//+serviceItem({
+		img: "assets/images/content/service-img6.jpg",
+		title: "Media",
+		btnMod: "service__item-btn_color_black",
+		text: "Создаем репутацию бренда в&nbsp;Сети, работаем с&nbsp;отзывами и&nbsp;пожеланиями клиентов напрямую, помогаем пользователям и&nbsp;привлекаем новых."
+	//})

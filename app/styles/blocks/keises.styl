@@ -1,0 +1,238 @@
+.keises
+	position relative
+	z-index 0
+	height 900px
+
+	&_h_800
+		min-height 800px
+
+	&__slider
+		z-index 2 !important
+		width 100%
+		height 800px
+
+		.swiper-slide
+			overflow hidden
+
+	&__open
+		position absolute !important
+		z-index 1 !important
+		top 100px
+		left 0
+		width 100%
+		height 800px
+
+		&_z_11
+			z-index 11 !important
+
+		&-item
+			overflow hidden
+			width 100%
+			height 100%
+
+		&-prev
+		&-next
+			position absolute
+			top 44px
+			border-top 8px solid $trn
+			border-bottom 8px solid $trn
+			cursor pointer
+			opacity 0
+			filter unquote('progid:DXImageTransform.Microsoft.Alpha(opacity=0)')
+			transition opacity .5s ease
+			will-change opacity
+
+		&-prev
+			right 116px
+			border-right 10px solid #fff
+
+		&-next
+			right 51px
+			border-left 10px solid #fff
+
+	&__slide-item
+		position absolute
+		z-index 1
+		width 50%
+		height 50%
+		transform translate(0, 0)
+		transition all 1s ease
+		will-change transform, width, height
+
+		&_pos
+
+			&_tl
+				top 0
+				left 0
+
+			&_tr
+				top 0
+				right 0
+
+			&_bl
+				bottom 0
+				left 0
+
+			&_br
+				bottom 0
+				right 0
+
+	&__pagination
+		position absolute
+		top 39px
+		right 32px
+		opacity 1
+		transition opacity .5s ease
+
+		&_state_hide
+			opacity 0
+			filter unquote('progid:DXImageTransform.Microsoft.Alpha(opacity=0)')
+
+	&-close
+
+		&_pos
+
+			&_l
+				transform translateX(-101%)
+
+			&_r
+				transform translateX(101%)
+
+			&_b
+				transform translateY(101%)
+
+			&_t
+				transform translateY(-101%)
+
+			&_tl
+				transform translate(-101%, -101%)
+
+			&_tr
+				transform translate(101%, -101%)
+
+			&_bl
+				transform translate(-101%, 101%)
+
+			&_br
+				transform translate(101%, 101%)
+
+	&-open
+		width 100%
+		height 100%
+		z-index 9
+
+		.keise
+			height 100%
+
+		.keise__img
+			opacity 0
+
+		&:hover
+
+			*
+				cursor default
+
+	&-show
+		opacity 1
+		filter unquote('progid:DXImageTransform.Microsoft.Alpha(opacity=100)')
+
+@media only screen and (max-width: 320px)
+	.keises
+		height 550px
+
+		&__slider
+			height 500px
+
+		&__open
+			top 50px
+
+			&-next
+			&-prev
+				top 17px
+
+			&-next
+				right 21px
+
+			&-prev
+				right 62px
+
+		&__pagination
+			top 16px
+			right 21px
+
+		&__slide-item
+			height 125px
+			width 100%
+
+			&_pos
+
+				&_tl
+					top 0
+					left 0
+
+				&_tr
+					top 125px
+					right 0
+
+				&_bl
+					top 250px
+					left 0
+
+				&_br
+					top 375px
+					right 0
+
+@media only screen and (min-width: 321px) and (max-width: 1099px)
+	.keises
+		height 800px
+
+		&__slider
+		&__open
+			height 700px
+
+		&__pagination
+			right 50px
+
+@media only screen and (min-width: 1100px) and (max-width: 1199px)
+	.keises
+		height 820px
+
+		&__slider
+		&__open
+			height 720px
+
+		&__pagination
+			right 46px
+
+@media only screen and (min-width: 1200px) and (max-width: 1299px)
+	.keises
+		height 840px
+
+		&__slider
+		&__open
+			height 740px
+
+		&__pagination
+			right 42px
+
+@media only screen and (min-width: 1300px) and (max-width: 1399px)
+	.keises
+		height 860px
+
+		&__slider
+		&__open
+			height 760px
+
+		&__pagination
+			right 38px
+
+@media only screen and (min-width: 1400px) and (max-width: 1499px)
+	.keises
+		height 880px
+
+		&__slider
+		&__open
+			height 780px
+
+		&__pagination
+			right 34px

@@ -1,0 +1,39 @@
+section#vacansies.vacansies
+
+	.vacansies-container
+
+		.vacansies__descr
+
+			.vacansies__title Вакансии
+
+			.vacansies__descr-post
+				| web-мастер
+
+			ul.vacansies__descr-list
+				li.vacansies__descr-item &mdash; Публикация, редактирование контента
+				li.vacansies__descr-item &mdash; Верстка шаблонов и лэндингов
+				li.vacansies__descr-item &mdash; Проверка текстов на орфографию, корректировка
+
+		form.vacansies__form(name="vacansies")
+			.vacansies__title Ответить на вакансию
+
+			.vacansies-wrap
+				input.vacansies__input(type="text" placeholder="E-mail" name="e-mail")
+
+				.vacansies__file
+					input.js-add-files(type="file" name="file")
+
+				.vacansies__file-text
+					| Прикрепить
+					br
+					| файл
+
+				textarea.vacansies__textarea(row=5)
+				button.vacansies__btn(type="submit") Отправить
+
+				.vacansies__icon-wrap
+					.vacansies__icon-file
+						.vacansies__icon-close
+						.vacansies__icon-doc
+
+

@@ -1,0 +1,45 @@
+header#about.header(role="banner")
+
+	.header-wrap
+		a.header__logo(href=jv0) 24ttl
+		.header__menu-icon.js-menu-open
+
+	.header__video
+
+		video#headerVideo.video-js.vjs-default-skin(preload="auto" autoplay loop)
+			source(src=videoSrc type="video/mp4")
+
+	.header__slider-slide
+
+		.header__slider-title
+			img(src="assets/images/logo.png")
+
+		.header__slider-text
+			| Всегда комплексный подход
+			br
+			| к задачам онлайн-бизнеса.
+			br
+			span Никаких краткосрочных и малоэффективных решений.
+			br
+			span Никаких компромиссов.
+
+	//.header__slider.swiper-container
+		.swiper-wrapper
+
+			each index in [1, 2, 3, 4]
+				.swiper-slide
+					.header__slider-slide
+
+						.header__slider-title О нас ##{index}
+
+						.header__slider-text
+							| 24TTL — команда специалистов из самых разных IT-областей,
+							| которая может решить любую — нестандартную, сложную,
+							| нереальную — задачу, связанную с&nbsp;созданием и&nbsp;обслуживанием
+							| веб-ресурсов, формированием онлайн&nbsp;-&nbsp;имиджа и&nbsp;повышением
+							| продаж с&nbsp;помощью digital-технологий.
+
+					img(src="assets/images/header-img1.jpg")
+
+
+		.header__slider-pagination

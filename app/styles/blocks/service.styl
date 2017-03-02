@@ -1,0 +1,308 @@
+.service
+	width 100%
+	display table
+	font-size 0
+
+	&__item
+		position relative
+		overflow hidden
+		min-width 500px
+		width 50%
+		height 420px
+		display inline-block
+		color #000
+
+		&-wrap
+			position absolute
+			top 0
+			left 0
+			padding 120px 14% 0
+			width 100%
+			height 100%
+
+		&-img
+			width 100%
+			height 100%
+
+		&-title
+			margin 0 auto
+			width 260px
+			font-family ubuntu-r
+			font-size 33px
+			line-height 40px
+			text-transform uppercase
+			text-align center
+			letter-spacing -.5px
+
+			&_color_white
+				color #fff
+
+			&_w_a
+				width auto
+
+		&-text
+			margin-top 49px
+			font-family officina-book-r
+			font-size 20px
+			line-height 26px
+			text-align center
+
+			&_color_white
+				color #fff
+
+			&_p_85
+				padding 0px 85px
+
+		&-separator
+			position relative
+			margin 13px auto
+			size(23px)
+			display none
+
+			&:before
+			&:after
+				position absolute
+				top 10px
+				left -5px
+				width 30px
+				height 1px
+				content ''
+				background-color #000
+
+			&:before
+				transform rotate(45deg)
+
+			&:after
+				transform rotate(-45deg)
+
+			&_color_white
+
+				&:before
+				&:after
+					background-color #fff
+
+		&-btn
+			display none
+			position absolute
+			top 29px
+			right 38px
+			size(37px)
+			border-radius 50%
+			border 1px solid #fff
+			opacity .45
+			cursor pointer
+
+			&:before
+				position absolute
+				top 8px
+				left 14px
+				content '?'
+				font-family officina-book-r
+				font-size 20px
+				color #fff
+
+			&_color_black
+				border-color #000
+
+				&:before
+					color #000
+
+@media only screen and (max-width: 320px)
+	.service
+
+		&__item
+			min-width 320px
+			width 100%
+			height 300px
+
+			&-img
+				position absolute
+				width auto
+				height auto
+
+			&:nth-child(1)
+
+				.service__item-img
+					left -217px
+					top 0
+
+			&:nth-child(2)
+
+				.service__item-img
+					left -360px
+					top -115px
+
+			&:nth-child(3)
+
+				.service__item-img
+					left -363px
+					top -119px
+
+			&:nth-child(4)
+
+				.service__item-img
+					left -390px
+					top -90px
+
+			&:nth-child(5)
+
+				.service__item-img
+					left -425px
+					top 0px
+
+			&:nth-child(6)
+
+				.service__item-img
+					left -115px
+					top -85px
+
+			&-wrap
+				padding 66px 8% 0px
+
+			&-title
+				width 100%
+				font-size 24px
+				line-height 30px
+
+			&-separator
+				margin 9px auto
+
+			&-text
+				margin-top 20px
+				font-size 14px
+				line-height 20px
+
+				&_p_85
+					padding 0
+
+			&-btn
+				top 16px
+				right 20px
+
+@media only screen and (max-width: 1099px) and (min-width: 321px)
+	.service
+
+		&__item
+			height 350px
+
+			img
+				width: 665px;
+				height: 100%;
+				position: relative;
+				left: -100px;
+
+			&-wrap
+				padding 100px 13% 0
+
+			&-title
+				font-size 28px
+				line-height 34px
+
+			&-text
+				margin-top 41px
+				font-size 16px
+				line-height 22px
+
+				&_p_85
+					padding 0 55px
+
+			&-separator
+				margin 10px auto 8px
+
+@media only screen and (min-width: 1100px) and (max-width: 1199px)
+	.service
+
+		&__item
+			height 364px
+
+			img
+				width: 695px;
+				height: 100%;
+				position: relative;
+				left: -85px;
+
+			&-wrap
+				padding 100px 13% 0
+
+			&-title
+				font-size 30px
+				line-height 36px
+
+			&-text
+				margin-top 41px
+				font-size 17px
+				line-height 23px
+
+				&_p_85
+					padding 0 50px
+
+			&-separator
+				margin 12px auto 6px
+
+@media only screen and (min-width: 1200px) and (max-width: 1299px)
+	.service
+
+		&__item
+			height 378px
+
+			img
+				width: 720px;
+				height: 100%;
+				position: relative;
+				left: -70px;
+
+			&-wrap
+				padding 115px 10% 0
+
+			&-title
+				font-size 30px
+				line-height 36px
+
+			&-text
+				margin-top 46px
+				font-size 18px
+				line-height 24px
+
+				&_p_85
+					padding 0 50px
+
+			&-separator
+				margin 13px auto 10px
+
+@media only screen and (min-width: 1300px) and (max-width: 1399px)
+	.service
+
+		&__item
+			height 392px
+
+			img
+				width: 746px;
+				height: 100%;
+				position: relative;
+				left: -50px;
+
+			&-wrap
+				padding 120px 10% 0
+
+			&-title
+				font-size 32px
+				line-height 38px
+
+			&-text
+				font-size 19px
+				line-height 25px
+
+				&_p_85
+					padding 0 50px
+
+			&-separator
+				margin 13px auto
+
+@media only screen and (min-width: 1400px) and (max-width: 1499px)
+	.service
+
+		&__item
+			height 406px
+
+			&-wrap
+				padding 120px 12% 0

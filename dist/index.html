@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="imagetoolbar" content="no">
+		<meta name="msthemecompatible" content="no">
+		<meta name="cleartype" content="on">
+		<meta name="HandheldFriendly" content="True">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="format-detection" content="address=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+		<meta name="application-name" content="24ttl">
+		<title>24ttl</title>
+		<meta name="description">
+		<meta name="keywords">
+		<meta name="copyright">
+		<link href="assets/styles/common.css" rel="stylesheet">
+		<link href="http://vjs.zencdn.net/4.12/video-js.css" rel="stylesheet">
+		<!--[if IE 8]><link href="assets/styles/ie8.css" rel="stylesheet"><script src="assets/scripts/libs/respond/dest/respond.min.js"></script><![endif]-->
+		<!--[if lt IE 9]><script>document.createElement('header');
+document.createElement('nav');
+document.createElement('section');
+document.createElement('article');
+document.createElement('aside');
+document.createElement('footer');</script><![endif]-->
+		<script src="http://vjs.zencdn.net/4.12/video.js"></script>
+		<script src="//api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+	</head>
+
+	<body>
+		<div class="main">
+			<header id="about" role="banner" class="header">
+				<div class="header-wrap"><a href="javascript:void(0);" class="header__logo">24ttl</a>
+					<div class="header__menu-icon js-menu-open"></div>
+				</div>
+				<div class="header__video">
+					<video id="headerVideo" preload="auto" autoplay loop class="video-js vjs-default-skin">
+						<source src="video/video2.mp4" type="video/mp4">
+					</video>
+				</div>
+				<div class="header__slider-slide">
+					<div class="header__slider-title">
+						<img src="assets/images/logo.png">
+					</div>
+					<div class="header__slider-text">Всегда комплексный подход
+						<br>к задачам онлайн-бизнеса.
+						<br><span>Никаких краткосрочных и малоэффективных решений.</span>
+						<br><span>Никаких компромиссов.</span>
+					</div>
+				</div>
+				<!--.header__slider.swiper-container.swiper-wrapper
+
+ each index in [1, 2, 3, 4]
+  .swiper-slide
+   .header__slider-slide
+   
+    .header__slider-title О нас #
+    
+    .header__slider-text
+     | 24TTL — команда специалистов из самых разных IT-областей,
+     | которая может решить любую — нестандартную, сложную,
+     | нереальную — задачу, связанную с&nbsp;созданием и&nbsp;обслуживанием
+     | веб-ресурсов, формированием онлайн&nbsp;-&nbsp;имиджа и&nbsp;повышением
+     | продаж с&nbsp;помощью digital-технологий.
+     
+   img(src="assets/images/header-img1.jpg")
+   
+   
+.header__slider-pagination-->
+			</header>
+			<div id="mainMenu" class="menu">
+				<div role="button" class="menu__btn-close js-menu-close"></div>
+				<div class="menu__lang">
+					<div class="menu__lang-item">eng</div>
+					<div class="menu__lang-item">han</div>
+				</div>
+				<nav>
+					<ul class="menu__nav">
+						<li class="menu__nav-item"><a href="#about" class="menu__nav-link js-menu-anchor">О кампании</a>
+						</li>
+						<li class="menu__nav-item"><a href="#services" class="menu__nav-link js-menu-anchor">Услуги</a>
+						</li>
+						<li class="menu__nav-item"><a href="#clients" class="menu__nav-link js-menu-anchor">Клиенты</a>
+						</li>
+						<li class="menu__nav-item"><a href="#keises" class="menu__nav-link js-menu-anchor">Кейсы</a>
+						</li>
+						<li class="menu__nav-item"><a href="#tools" class="menu__nav-link js-menu-anchor">Инструменты</a>
+						</li>
+						<li class="menu__nav-item"><a href="#vacansies" class="menu__nav-link js-menu-anchor">Вакансии</a>
+						</li>
+						<li class="menu__nav-item"><a href="#map" class="menu__nav-link js-menu-anchor">Карта</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="menu__contacts">
+					<div class="menu__icons">
+						<a href="javascript:void(0);" class="menu__icon menu__icon_vk"></a>
+						<a href="javascript:void(0);" class="menu__icon menu__icon_fb"></a>
+						<a href="javascript:void(0);" class="menu__icon menu__icon_tw"></a>
+						<a href="javascript:void(0);" class="menu__icon menu__icon_g"></a>
+					</div>
+					<div class="menu__contacts-item"><a href="mailto: 24ttl@24ttl.ru" class="menu__contacts-link">24ttl@24ttl.ru</a>
+					</div>
+					<div class="menu__contacts-item"><a href="tel: +7 (495) 772-85-69" class="menu__contacts-link">+7 (495) 772-85-69</a>
+					</div>
+				</div>
+			</div>
+			<!--.note.note__text
+ | Команда IT-специалистов в режиме 24/7 отвечает на самые разные,
+ | нестандартные и&nbsp;сложные вызовы по&nbsp;созданию и&nbsp;обслуживанию веб-ресурсов,
+ | формированию имиджа и&nbsp;повышению продаж. Только актуальные digital-технологии
+ | и&nbsp;WOW-тренды.
+ -->
+			<section id="services" class="service">
+				<div class="service__item">
+					<img src="assets/images/content/service-img5.jpg" class="service__item-img">
+					<div class="service__item-wrap">
+						<h2 class="service__item-title service__item-title_color_white service__item-title_w_a">Диджитал-стратегия</h2>
+						<div role="separator" class="service__item-separator service__item-separator_color_white"></div>
+						<p class="service__item-text service__item-text_color_white">Разработка стратегии продвижения бизнеса в&nbsp;сети Интернет, комплексный подход к&nbsp;планированию и&nbsp;реализации маркетинговых мероприятий с&nbsp;учетом индивидуальных особенностей компании-заказчика.</p>
+						<div class="service__item-btn"></div>
+					</div>
+				</div>
+				<div class="service__item">
+					<img src="assets/images/content/service-img4.jpg" class="service__item-img">
+					<div class="service__item-wrap">
+						<h2 class="service__item-title">SEO и SMO</h2>
+						<div role="separator" class="service__item-separator"></div>
+						<p class="service__item-text">Выводим сайт на топовые позиции в&nbsp;результатах, оптимизируем содержание сайта, делаем каждую веб&nbsp-&nbspстраницу полезной и&nbsp;удобной для пользователя.</p>
+						<div class="service__item-btn"></div>
+					</div>
+				</div>
+				<div class="service__item">
+					<img src="assets/images/content/service-img2.jpg" class="service__item-img">
+					<div class="service__item-wrap">
+						<h2 class="service__item-title">Поддержка проектов</h2>
+						<div role="separator" class="service__item-separator"></div>
+						<p class="service__item-text">Мониторинг и&nbsp;управление контентом, модернизация веб-ресурсов, внедрение нового функционала, техническая поддержка в&nbsp;режиме&nbsp;24/7</p>
+						<div class="service__item-btn"></div>
+					</div>
+				</div>
+				<div class="service__item">
+					<img src="assets/images/content/service-img1.jpg" class="service__item-img">
+					<div class="service__item-wrap">
+						<h2 class="service__item-title service__item-title_color_white service__item-title_w_a">Разработка веб&nbsp;-&nbsp;решений для&nbsp;бизнеса</h2>
+						<div role="separator" class="service__item-separator service__item-separator_color_white"></div>
+						<p class="service__item-text service__item-text_color_white">Создание новых технологических решений для&nbsp;вашего бизнеса, оптимизация и&nbsp;сопровождение существующих проектов, интеграфия систем CRM и&nbsp;ERP, веб-разработка E-commerce полного цикла.</p>
+						<div class="service__item-btn"></div>
+					</div>
+				</div>
+				<!--+serviceItem({img: "assets/images/content/service-img3.jpg",
+title: "Social SEO",
+btnMod: "service__item-btn_color_black",
+text: "Оптимизируем группы в&nbsp;соцсетях и&nbsp;блоги для увеличения конверсии пользователей, привлечения новых клиентов и&nbsp;большей узнаваемости бренда в&nbsp;Сети."-->
+				<!--})-->
+				<!--+serviceItem({img: "assets/images/content/service-img6.jpg",
+title: "Media",
+btnMod: "service__item-btn_color_black",
+text: "Создаем репутацию бренда в&nbsp;Сети, работаем с&nbsp;отзывами и&nbsp;пожеланиями клиентов напрямую, помогаем пользователям и&nbsp;привлекаем новых."-->
+				<!--})-->
+			</section>
+			<section id="clients" class="clients">
+				<div class="title title_bgc_orange">Клиенты</div>
+				<div class="clients-container">
+					<div class="clients__item">
+						<div class="clients__logo clients__logo_type_mumu"></div>
+					</div>
+					<div class="clients__item">
+						<div class="clients__logo clients__logo_type_wokker"></div>
+					</div>
+					<div class="clients__item">
+						<div class="clients__logo clients__logo_type_ap"></div>
+					</div>
+					<div class="clients__item clients__item_width_320">
+						<div class="clients__logo clients__logo_type_kp"></div>
+					</div>
+					<div class="clients__item">
+						<div class="clients__logo clients__logo_type_qiwi"></div>
+					</div>
+					<div class="clients__item clients__item_width_1000">
+						<div class="clients__logo clients__logo_type_fb"></div>
+					</div>
+					<div class="clients__item clients__item_width_320">
+						<div class="clients__logo clients__logo_type_fh"></div>
+					</div>
+					<div class="clients__item">
+						<div class="clients__logo clients__logo_type_peugeot"></div>
+					</div>
+					<div class="clients__item clients__item_width_1600">
+						<div class="clients__logo clients__logo_type_chocolate"></div>
+					</div>
+					<div class="clients__item clients__item_width_320">
+						<div class="clients__logo clients__logo_type_star"></div>
+					</div>
+					<div class="clients__item clients__item_width_1000">
+						<div class="clients__logo clients__logo_type_zvooq"></div>
+					</div>
+					<div class="clients__item">
+						<div class="clients__logo clients__logo_type_spartak"></div>
+					</div>
+					<div class="clients__item clients__item_width_320">
+						<div class="clients__logo clients__logo_type_hsad"></div>
+					</div>
+					<div class="clients__item">
+						<div class="clients__logo clients__logo_type_infiniti"></div>
+					</div>
+					<div class="clients__item">
+						<div class="clients__logo clients__logo_type_huggies"></div>
+					</div>
+					<div class="clients__item clients__item_height_0"></div>
+				</div>
+			</section>
+			<section id="keises" class="keises">
+				<div class="title">Кейсы</div>
+				<div class="keises__slider swiper-container js-slider-close">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<div data-index='0' class="keises__slide-item keises__slide-item_pos_tl js-keise-open">
+								<div class="keise keise_color_purple">
+									<img src="assets/images/keises/starlight.jpg" class="keise__img">
+									<div class="keise-wrap">
+										<div class="keise__logo keise__logo_type_starlight"></div>
+									</div>
+									<div class="keise__title keise__title_pt_37">сайт для сети
+										<br>старлайт бургер</div>
+								</div>
+							</div>
+							<div data-index='1' class="keises__slide-item keises__slide-item_pos_tr js-keise-open">
+								<div class="keise keise_color_pink">
+									<img src="assets/images/keises/plastinina.jpg" class="keise__img">
+									<div class="keise-wrap">
+										<div class="keise__logo keise__logo_type_plastinina"></div>
+									</div>
+									<div class="keise__title keise__title_pt_14">Вирусный конкурс
+										<br>для Киры Пластининой
+										<br>на Facebook</div>
+								</div>
+							</div>
+							<div data-index='2' class="keises__slide-item keises__slide-item_pos_bl js-keise-open">
+								<div class="keise keise_color_red">
+									<img src="assets/images/keises/spartak.jpg" class="keise__img">
+									<div class="keise-wrap">
+										<div class="keise__logo keise__logo_type_spartak"></div>
+									</div>
+									<div class="keise__title keise__title_pt_14">Новый логотип, сайт
+										<br>и фирменный стиль
+										<br>ЖБК «Спартак»</div>
+								</div>
+							</div>
+							<div data-index='3' class="keises__slide-item keises__slide-item_pos_br js-keise-open">
+								<div class="keise keise_color_orange">
+									<img src="assets/images/keises/infiniti.jpg" class="keise__img">
+									<div class="keise-wrap">
+										<div class="keise__logo keise__logo_type_infiniti"></div>
+									</div>
+									<div class="keise__title keise__title_pt_37">Клуб поклонников
+										<br>Инфинити в Фейсбук</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div data-index='4' class="keises__slide-item keises__slide-item_pos_tl js-keise-open">
+								<div class="keise keise_color_orange">
+									<img src="assets/images/keises/triobar.jpg" class="keise__img">
+									<div class="keise-wrap">
+										<div class="keise__logo keise__logo_type_triobar"></div>
+									</div>
+									<div class="keise__title keise__title_pt_37">Сайт и реклама
+										<br>для ТриоБара</div>
+								</div>
+							</div>
+							<div data-index='5' class="keises__slide-item keises__slide-item_pos_tr js-keise-open">
+								<div class="keise keise_color_blue">
+									<img src="assets/images/keises/peugeot.jpg" class="keise__img">
+									<div class="keise-wrap">
+										<div class="keise__logo keise__logo_type_peugeot"></div>
+									</div>
+									<div class="keise__title">Страница входа, конкурс, каталог
+										<br>на Facebook для Peugeot Scooters,
+										<br>а так же другие социальные сети</div>
+								</div>
+							</div>
+							<div data-index='6' class="keises__slide-item keises__slide-item_pos_bl js-keise-open">
+								<div class="keise keise_color_green">
+									<img src="assets/images/keises/mumu.jpg" class="keise__img">
+									<div class="keise-wrap">
+										<div class="keise__logo keise__logo_type_mumu"></div>
+									</div>
+									<div class="keise__title keise__title_pt_37">Доставка от Му-Му
+										<br>в Фейсбуке</div>
+								</div>
+							</div>
+							<div data-index='7' class="keises__slide-item keises__slide-item_pos_br js-keise-open">
+								<div class="keise keise_color_red">
+									<img src="assets/images/keises/timole.jpg" class="keise__img">
+									<div class="keise-wrap">
+										<div class="keise__logo keise__logo_type_timole"></div>
+									</div>
+									<div class="keise__title keise__title_pt_26">фирменный стиль и сайт
+										<br>компании timole</div>
+								</div>
+							</div>
+						</div>
+						<!--.swiper-slide.keises__slide-item.keises__slide-item_pos_tl.js-keise-open(data-index=0)
+ include ../blocks/keises/wokker
+.keises__slide-item.keises__slide-item_pos_br.js-keise-open(data-index=11)
+ include ../blocks/keises/cordzero
+.keises__slide-item.keises__slide-item_pos_tr.js-keise-open(data-index=1)
+ include ../blocks/keises/dillers
+.keises__slide-item.keises__slide-item_pos_bl.js-keise-open(data-index=2)
+ include ../blocks/keises/internet
+ -->
+						<!--.swiper-slide.keises__slide-item.keises__slide-item_pos_tl.js-keise-open(data-index=12)
+ include ../blocks/keises/dusoleil
+.keises__slide-item.keises__slide-item_pos_tr.js-keise-open(data-index=13)
+ include ../blocks/keises/exppage
+.keises__slide-item.keises__slide-item_pos_br.js-keise-open(data-index=15)
+ include ../blocks/keises/exppagetv
+.keises__slide-item.keises__slide-item_pos_br.js-keise-open(data-index=3)
+ include ../blocks/keises/azbuka
+ -->
+					</div>
+				</div>
+				<div class="keises__open swiper-container js-slider-open">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<div class="keises__open-item">
+								<div class="keise-open">
+									<div class="keise-open__info keise-open__info_color_purple left">
+										<div class="keise-open__logo keise-open__logo_type_starlight"></div>
+										<div class="keise-open__close js-keise-close"></div>
+										<div class="keise-open__title">Сайт для сети старлайт бургер</div>
+										<p class="keise-open__text">Иногда желание полакомиться настоящим, космически вкусным бургером возникает совершенно спонтанно и&nbsp;застает в&nbsp;самом невозможном месте и&nbsp;времени суток. Специально для того, чтобы каждый мог утолить свой голод, да&nbsp;еще выбрав
+											свои любимые ингредиенты, компания «Старлайт&nbsp;Бургер» вместе с&nbsp;нами решила запустить сайт «Старлайт&nbsp;Экспресс&nbsp;Бургер» по&nbsp;приготовлению и&nbsp;доставке блюд из&nbsp;своего меню.</p>
+										<p class="keise-open__text">Мы сделали сайт максимально сочным и&nbsp;шипящим маслом, не&nbsp;забыв про&nbsp; обязательную адаптивность под&nbsp;самые маленькие планшеты и&nbsp;мобильные устройства, чтобы всегда быть полезными Клиентам сети «Старлайт&nbsp;Бургер».</p>
+										<div
+										class="keise-open__pagination"></div>
+								</div>
+								<div id="starlightSlider" class="keise-open__slider swiper-container">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide keise-open__slide">
+											<img src="assets/images/content/starlight-slide1.jpg" class="keise-open__img">
+											<div class="keise-open__note">Пример подписи</div>
+										</div>
+										<div class="swiper-slide keise-open__slide">
+											<img src="assets/images/content/starlight-slide2.jpg" class="keise-open__img">
+											<div class="keise-open__note">Пример подписи</div>
+										</div>
+										<div class="swiper-slide keise-open__slide">
+											<img src="assets/images/content/starlight-slide3.jpg" class="keise-open__img">
+											<div class="keise-open__note">Пример подписи</div>
+										</div>
+										<div class="swiper-slide keise-open__slide">
+											<img src="assets/images/content/starlight-slide4.jpg" class="keise-open__img">
+											<div class="keise-open__note">Пример подписи</div>
+										</div>
+										<div class="swiper-slide keise-open__slide">
+											<img src="assets/images/content/starlight-slide5.jpg" class="keise-open__img">
+											<div class="keise-open__note">Пример подписи</div>
+										</div>
+										<div class="swiper-slide keise-open__slide">
+											<img src="assets/images/content/starlight-slide6.jpg" class="keise-open__img">
+											<div class="keise-open__note">Пример подписи</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="keises__open-item">
+							<div class="keise-open">
+								<div class="keise-open__info keise-open__info_color_pink left">
+									<div class="keise-open__logo keise-open__logo_type_plastinina"></div>
+									<div class="keise-open__close js-keise-close"></div>
+									<div class="keise-open__title">Вирусный конкурс для
+										<br>Киры Пластининой на Facebook</div>
+									<p class="keise-open__text">Страница Киры Пластининой на&nbsp;Facebook развивалась стабильно, но&nbsp; темпы роста поклонников и&nbsp;их&nbsp;активность нужно было увеличить. Мы предложили сделать конкурс с&nbsp;простой механикой: сфотографируйся в&nbsp; одежде от &nbsp;Киры,
+										тот кто наберет наибольшее число Лайков, станет победителем, но с помощью специального приложения мы добавили этому конкурсу эффективности, за счет того, что голосовать за участников конкурса могли только поклонники, тем самым мы мотивировали
+										участников приглашать своих друзей проголосовать за них и&nbsp;то&nbsp;же&nbsp;становиться поклонниками Киры. Помимо конкурса в&nbsp;приложении мы сделали несколько полезных разделов: Что с&nbsp;чем носить, Коллекции, Журнал, Видео блог, Карта
+										Магазинов и&nbsp;более подробная информация о&nbsp;Кире. За полгода данный конкурс помог увеличить число поклонников с 1200 до 10000 человек.
+									</p>
+									<div class="keise-open__pagination"></div>
+								</div>
+								<div id="plastininaSlider" class="keise-open__slider swiper-container">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide keise-open__slide">
+											<img src="assets/images/content/plastinina-slide1.jpg" class="keise-open__img">
+											<div class="keise-open__note">Призыв залайкать</div>
+										</div>
+										<div class="swiper-slide keise-open__slide">
+											<img src="assets/images/content/plastinina-slide2.jpg" class="keise-open__img">
+											<div class="keise-open__note">Условия конкурса</div>
+										</div>
+										<div class="swiper-slide keise-open__slide">
+											<img src="assets/images/content/plastinina-slide3.jpg" class="keise-open__img">
+											<div class="keise-open__note">Каталог одежды по коллекциям</div>
+										</div>
+										<div class="swiper-slide keise-open__slide">
+											<img src="assets/images/content/plastinina-slide4.jpg" class="keise-open__img">
+											<div class="keise-open__note">Подробная информация о Кире</div>
+										</div>
+										<div class="swiper-slide keise-open__slide">
+											<img src="assets/images/content/plastinina-slide5.jpg" class="keise-open__img">
+											<div class="keise-open__note">Карта всех магазинов</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="keises__open-item">
+							<div class="keise-open">
+								<div class="keise-open__info keise-open__info_color_red left">
+									<div class="keise-open__logo keise-open__logo_type_spartak"></div>
+									<div class="keise-open__close js-keise-close"></div>
+									<div class="keise-open__title keise-open__title_peugeot">Новый логотип ,сайт и фирменный
+										<br>стиль ЖБК «Спартак»</div>
+									<p class="keise-open__text">Рыбный текст. Представительство компании Peugeot, а именно подразделение Скутеры, решило привлечь дополнительное внимание к марке, за счет проведением интеллектуального конкурса на Facebook, с информационной поддержкой в Твиттере, ЖЖ и Вконтакте.
+										Мы разработали специальную страницу входа, помогли с проведение самого конкурса и разработали каталог всех моделейв виде приложения. Рыбный текст.</p>
+									<div class="keise-open__pagination"></div>
+								</div>
+								<div id="spartakSlider" class="keise-open__slider swiper-container">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide keise-open__slide">
+											<img src="assets/images/content/spartak-slide1.jpg" class="keise-open__img">
+											<div class="keise-open__note">Пример подписи</div>
+										</div>
+										<div class="swiper-slide keise-open__slide">
+											<img src="assets/images/content/spartak-slide2.jpg" class="keise-open__img">
+											<div class="keise-open__note">Пример подписи</div>
+										</div>
+										<div class="swiper-slide keise-open__slide">
+											<img src="assets/images/content/spartak-slide3.jpg" class="keise-open__img">
+											<div class="keise-open__note">Пример подписи</div>
+										</div>
+										<div class="swiper-slide keise-open__slide">
+											<img src="assets/images/content/spartak-slide4.jpg" class="keise-open__img">
+											<div class="keise-open__note">Пример подписи</div>
+										</div>
+										<div class="swiper-slide keise-open__slide">
+											<img src="assets/images/content/spartak-slide5.jpg" class="keise-open__img">
+											<div class="keise-open__note">Пример подписи</div>
+										</div>
+										<div class="swiper-slide keise-open__slide">
+											<img src="assets/images/content/spartak-slide6.jpg" class="keise-open__img">
+											<div class="keise-open__note">Пример подписи</div>
+										</div>
+										<div class="swiper-slide keise-open__slide">
+											<img src="assets/images/content/spartak-slide7.jpg" class="keise-open__img">
+											<div class="keise-open__note">Пример подписи</div>
+										</div>
+										<div class="swiper-slide keise-open__slide">
+											<img src="assets/images/content/spartak-slide8.jpg" class="keise-open__img">
+											<div class="keise-open__note">Пример подписи</div>
+										</div>
+										<div class="swiper-slide keise-open__slide">
+											<img src="assets/images/content/spartak-slide9.jpg" class="keise-open__img">
+											<div class="keise-open__note">Пример подписи</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="keises__open-item">
+							<div class="keise-open">
+								<div class="keise-open__info keise-open__info_color_orange left">
+									<div class="keise-open__logo keise-open__logo_type_infiniti"></div>
+									<div class="keise-open__close js-keise-close"></div>
+									<div class="keise-open__title">Клуб поклонников
+										<br>инфинити в Фейсбук</div>
+									<p class="keise-open__text">Компания “Infiniti” приняла стратегическое решение развивать свое присутствие в&nbp;социальных сетях и&nbp;доверила нам&nbp;создание брендированного сообщества в&nbp;Facebook. Основной задачей было представить бренд в&nbp; соответствии с&nbp;его&nbp;уровнем,
+										ожиданиями ЦА&nbp;и&nbp;достойно выступить на&nbp;фоне конкурентов, перехватив часть их&nbp;аудитории.</p>
+									<p class="keise-open__text">В крайне сжатые сроки мы запустили «Инфинити клуб Россия», в&nbp;рамках которого смогли успешно интегрировать весь модельный ряд, а&nbp;также провести конкурсную активность, встретив на&nbp;одной площадке счастливых владельцев данной марки и&nbp;ее&nbp;потенциальных
+										покупателей.</p>
+									<div class="keise-open__pagination"></div>
+								</div>
+								<div id="infinitiSlider" class="keise-open__slider swiper-container">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide">
+											<img src="assets/images/content/infiniti-slide1.jpg" class="keise-open__img">
+											<div class="keise-open__note">Пример подписи</div>
+										</div>
+										<div class="swiper-slide">
+											<img src="assets/images/content/infiniti-slide2.jpg" class="keise-open__img">
+											<div class="keise-open__note">Пример подписи</div>
+										</div>
+										<div class="swiper-slide">
+											<img src="assets/images/content/infiniti-slide3.jpg" class="keise-open__img">
+											<div class="keise-open__note">Пример подписи</div>
+										</div>
+										<div class="swiper-slide">
+											<img src="assets/images/content/infiniti-slide4.jpg" class="keise-open__img">
+											<div class="keise-open__note">Пример подписи</div>
+										</div>
+										<div class="swiper-slide">
+											<img src="assets/images/content/infiniti-slide5.jpg" class="keise-open__img">
+											<div class="keise-open__note">Пример подписи</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="keises__open-item">
+							<div class="keise-open">
+								<div class="keise-open__info keise-open__info_color_orange left">
+									<div class="keise-open__logo keise-open__logo_type_triobar"></div>
+									<div class="keise-open__close js-keise-close"></div>
+									<div class="keise-open__title">Сайт и реклама для ТриоБара</div>
+									<p class="keise-open__text">ТриоБар — это iPhone среди кулеров, один раз попробуешь и&nbsp;больше не&nbsp;захочется: фильтровать воду, кипятить, ждать пока остынет и&nbsp;т.&nbsp;д. Очень удобная штука, для которой мы пол-лета и&nbsp;пол-осени делали сайт, снимали ролики
+										и&nbsp;делали дизайн рекламной продукции.</p>
+									<div class="keise-open__pagination"></div>
+								</div>
+								<div id="triobarSlider" class="keise-open__slider swiper-container">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide keise-open__slide">
+											<img src="assets/images/content/triobar-slide1.jpg" class="keise-open__img">
+											<div class="keise-open__note">Пример подписи</div>
+										</div>
+										<div class="swiper-slide keise-open__slide">
+											<img src="assets/images/content/triobar-slide2.jpg" class="keise-open__img">
+											<div class="keise-open__note">Пример подписи</div>
+										</div>
+										<div class="swiper-slide keise-open__slide">
+											<img src="assets/images/content/triobar-slide3.jpg" class="keise-open__img">
+											<div class="keise-open__note">Пример подписи</div>
+										</div>
+										<div class="swiper-slide keise-open__slide">
+											<img src="assets/images/content/triobar-slide4.jpg" class="keise-open__img">
+											<div class="keise-open__note">Пример подписи</div>
+										</div>
+										<div class="swiper-slide keise-open__slide">
+											<img src="assets/images/content/triobar-slide5.jpg" class="keise-open__img">
+											<div class="keise-open__note">Пример подписи</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="keises__open-item">
+							<div class="keise-open">
+								<div class="keise-open__info keise-open__info_color_blue left">
+									<div class="keise-open__logo keise-open__logo_type_peugeot"></div>
+									<div class="keise-open__close js-keise-close"></div>
+									<div class="keise-open__title keise-open__title_peugeot">Страница входа, конкурс, каталог
+										<br>на Facebook для Peugeot Scooters,
+										<br>а так же другие социальные сети</div>
+									<p class="keise-open__text">Представительство компании Peugeot, а&nbsp;именно подразделение Скутеры, решило привлечь дополнительное внимание к&nbsp;марке, за&nbsp;счет проведением интеллектуального конкурса на&nbsp;Facebook, с&nbsp;информационной поддержкой в&nbsp;Твиттере,
+										ЖЖ и&nbsp;Вконтакте. Мы разработали специальную страницу входа, помогли с&nbsp;проведение самого конкурса и&nbsp;разработали каталог всех моделей в&nbsp;виде приложения.</p>
+									<div class="keise-open__pagination"></div>
+								</div>
+								<div id="peugeotSlider" class="keise-open__slider swiper-container">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide keise-open__slide">
+											<img src="assets/images/content/peugeot-slide1.jpg" class="keise-open__img">
+											<div class="keise-open__note">Пример подписи</div>
+										</div>
+										<div class="swiper-slide keise-open__slide">
+											<img src="assets/images/content/peugeot-slide2.jpg" class="keise-open__img">
+											<div class="keise-open__note">Пример подписи</div>
+										</div>
+										<div class="swiper-slide keise-open__slide">
+											<img src="assets/images/content/peugeot-slide3.jpg" class="keise-open__img">
+											<div class="keise-open__note">Пример подписи</div>
+										</div>
+										<div class="swiper-slide keise-open__slide">
+											<img src="assets/images/content/peugeot-slide4.jpg" class="keise-open__img">
+											<div class="keise-open__note">Пример подписи</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="keises__open-item">
+							<div class="keise-open">
+								<div class="keise-open__info keise-open__info_color_green left">
+									<div class="keise-open__logo keise-open__logo_type_mumu"></div>
+									<div class="keise-open__close js-keise-close"></div>
+									<div class="keise-open__title">Доставка от Му-Му в Фейсбуке</div>
+									<p class="keise-open__text">Как повысить продажи у&nbsp;крупной сети питания? Для компании «Му-Му» мы&nbsp;разработали и&nbsp;запустили Приложение в&nbsp;Facebook, позволяющее делать заказы по-настоящему вкусной домашней еды, не&nbsp;отрываясь от&nbsp;общения в&nbsp;популярной
+										социальной сети.</p>
+									<p class="keise-open__text">В рамках проекты мы проинтегрировались с&nbsp;существующими системами выбора меню и&nbsp;доставки заказов, предложили интересные дизайн-решения и&nbsp;снискали популярность не&nbsp;только у&nbsp;завсегдатаев, но&nbsp;и&nbsp;редких гостей сети
+										кафе «Му-Му».</p>
+									<div class="keise-open__pagination"></div>
+								</div>
+								<div id="mumuSlider" class="keise-open__slider swiper-container">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide keise-open__slide">
+											<img src="assets/images/content/mumu-slide1.jpg" class="keise-open__img">
+											<div class="keise-open__note">Пример подписи</div>
+										</div>
+										<div class="swiper-slide keise-open__slide">
+											<img src="assets/images/content/mumu-slide2.jpg" class="keise-open__img">
+											<div class="keise-open__note">Пример подписи</div>
+										</div>
+										<div class="swiper-slide keise-open__slide">
+											<img src="assets/images/content/mumu-slide3.jpg" class="keise-open__img">
+											<div class="keise-open__note">Пример подписи</div>
+										</div>
+										<div class="swiper-slide keise-open__slide">
+											<img src="assets/images/content/mumu-slide4.jpg" class="keise-open__img">
+											<div class="keise-open__note">Пример подписи</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="keises__open-item">
+							<div class="keise-open">
+								<div class="keise-open__info keise-open__info_color_red left">
+									<div class="keise-open__logo keise-open__logo_type_timole"></div>
+									<div class="keise-open__close js-keise-close"></div>
+									<div class="keise-open__title">Фирменный стиль и сайт
+										<br>компании timole</div>
+									<p class="keise-open__text">В декабре 2011 года на&nbsp;Международном форуме «Fashion House International», прошедшем в&nbsp;г.Санья (Китай), среди таких стран-участниц, как Бельгия, Казахстан, КНР, Украина, Франция, Япония, Греция и Россия, компания Timole завоевала 1-е&nbsp;место
+										в&nbsp;номинациях «Лучший дизайн года» и&nbsp; «Самая стильная школьная коллекция 2011г», а&nbsp;в&nbsp;марте мы с&nbsp;огромной радостью запустили лучший сайт по&nbsp;продаже детской одежды timole.ru</p>
+									<div class="keise-open__pagination"></div>
+								</div>
+								<div id="timoleSlider" class="keise-open__slider swiper-container">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide keise-open__slide">
+											<img src="assets/images/content/timole-slide1.jpg" class="keise-open__img">
+										</div>
+										<div class="swiper-slide keise-open__slide">
+											<img src="assets/images/content/timole-slide2.jpg" class="keise-open__img">
+											<div class="keise-open__note">Синтез знака бесконечности и бантика
+												<br>дал миру «Бесконечное детство»</div>
+										</div>
+										<div class="swiper-slide keise-open__slide">
+											<img src="assets/images/content/timole-slide3.jpg" class="keise-open__img">
+											<div class="keise-open__note">Пример оформления печатной рекламы</div>
+										</div>
+										<div class="swiper-slide keise-open__slide">
+											<img src="assets/images/content/timole-slide4.jpg" class="keise-open__img">
+										</div>
+										<div class="swiper-slide keise-open__slide">
+											<img src="assets/images/content/timole-slide5.jpg" class="keise-open__img">
+											<div class="keise-open__note">Корпоративная, персональная визитки Тимоли
+												<br>и диск с презентацией компании</div>
+										</div>
+										<div class="swiper-slide keise-open__slide">
+											<img src="assets/images/content/timole-slide6.jpg" class="keise-open__img">
+										</div>
+										<div class="swiper-slide keise-open__slide">
+											<img src="assets/images/content/timole-slide7.jpg" class="keise-open__img">
+										</div>
+										<div class="swiper-slide keise-open__slide">
+											<img src="assets/images/content/timole-slide8.jpg" class="keise-open__img">
+										</div>
+										<div class="swiper-slide keise-open__slide">
+											<img src="assets/images/content/timole-slide9.jpg" class="keise-open__img">
+										</div>
+										<div class="swiper-slide keise-open__slide">
+											<img src="assets/images/content/timole-slide10.jpg" class="keise-open__img">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--.swiper-slide.keises__open-item
+ include ../blocks/keises-open/wokker
+ -->
+					<!--.swiper-slide.keises__open-item
+ include ../blocks/keises-open/dillers
+ -->
+					<!--.swiper-slide.keises__open-item
+ include ../blocks/keises-open/internet
+ -->
+					<!--.swiper-slide.keises__open-item
+ include ../blocks/keises-open/azbuka
+ -->
+					<!--.swiper-slide.keises__open-item
+ include ../blocks/keises-open/cordzero
+ -->
+					<!--.swiper-slide.keises__open-item
+ include ../blocks/keises-open/dusoleil
+ -->
+					<!--.swiper-slide.keises__open-item
+ include ../blocks/keises-open/exppage
+ -->
+					<!--.swiper-slide.keises__open-item
+ include ../blocks/keises-open/exppagetv
+ -->
+				</div>
+		</div>
+		<div class="keises__open-prev js-keise-button js-keise-prev"></div>
+		<div class="keises__open-next js-keise-button js-keise-next"></div>
+		<div class="keises__pagination js-keise-pag"></div>
+		</section>
+		<section id="tools" class="tools">
+			<div class="title">Технологии</div>
+			<div class="tools-container">
+				<div class="tools__slider swiper-container">
+					<div class="swiper-wrapper">
+						<!--.swiper-slide.tools__slide
+ img(src="assets/images/tools/git.jpg")
+ -->
+						<!--.swiper-slide.tools__slide
+ img(src="assets/images/tools/indesign.jpg")
+ -->
+						<!--.swiper-slide.tools__slide
+ img(src="assets/images/tools/sql.jpg")
+ -->
+						<!--.swiper-slide.tools__slide
+ img(src="assets/images/tools/ubuntu.jpg")
+ -->
+						<!--.swiper-slide.tools__slide
+ img(src="assets/images/tools/redis.jpg")
+ -->
+						<!--.swiper-slide.tools__slide
+ img(src="assets/images/tools/compass.jpg")
+ -->
+						<div class="swiper-slide">
+							<div class="tools__slide">
+								<img src="assets/images/tools/html5.jpg">
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="tools__slide">
+								<img src="assets/images/tools/css3.jpg">
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="tools__slide">
+								<img src="assets/images/tools/android.jpg">
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="tools__slide">
+								<img src="assets/images/tools/ios.jpg">
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="tools__slide">
+								<img src="assets/images/tools/smarttv.jpg">
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="tools__slide">
+								<img src="assets/images/tools/bitrix.jpg">
+							</div>
+						</div>
+						<!--.swiper-slide.tools__slide
+ img(src="assets/images/tools/illustrator.jpg")
+ 
+ -->
+					</div>
+				</div>
+			</div>
+			<div class="tools__slider-prev js-tools-prev"></div>
+			<div class="tools__slider-next js-tools-next"></div>
+		</section>
+		<section id="vacansies" class="vacansies">
+			<div class="vacansies-container">
+				<div class="vacansies__descr">
+					<div class="vacansies__title">Вакансии</div>
+					<div class="vacansies__descr-post">web-мастер</div>
+					<ul class="vacansies__descr-list">
+						<li class="vacansies__descr-item">&mdash; Публикация, редактирование контента</li>
+						<li class="vacansies__descr-item">&mdash; Верстка шаблонов и лэндингов</li>
+						<li class="vacansies__descr-item">&mdash; Проверка текстов на орфографию, корректировка</li>
+					</ul>
+				</div>
+				<form name="vacansies" class="vacansies__form">
+					<div class="vacansies__title">Ответить на вакансию</div>
+					<div class="vacansies-wrap">
+						<input type="text" placeholder="E-mail" name="e-mail" class="vacansies__input">
+						<div class="vacansies__file">
+							<input type="file" name="file" class="js-add-files">
+						</div>
+						<div class="vacansies__file-text">Прикрепить
+							<br>файл</div>
+						<textarea row="5" class="vacansies__textarea"></textarea>
+						<button type="submit" class="vacansies__btn">Отправить</button>
+						<div class="vacansies__icon-wrap">
+							<div class="vacansies__icon-file">
+								<div class="vacansies__icon-close"></div>
+								<div class="vacansies__icon-doc"></div>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+		</section>
+		<section id="map" class="map">
+			<div class="map-wrap js-map-text">
+				<div class="map__icon"></div>
+				<div class="map__title">Карта</div>
+				<div class="map__address">Moscow,
+					<br>4th Tverskaya-13</div>
+				<div class="map__btn js-map-open">Посмотреть</div>
+			</div>
+			<div id="mapPlan" class="map__plan js-map-plan"></div>
+			<div class="map__bg js-map-bg"></div>
+		</section>
+		<footer class="footer">
+			<div class="footer__partner">
+				<div class="footer__partner-text">Сертифицированный партнёр</div>
+				<a href="https://www.yandex.ru/" class="footer__logo footer__logo_color_yellow">
+					<div class="footer__yandex"></div>
+				</a>
+				<a href="https://www.google.ru/" class="footer__logo footer__logo_color_light-blue">
+					<div class="footer__google"></div>
+				</a>
+				<a href="https://www.vk.com/" class="footer__logo footer__logo_color_blue">
+					<div class="footer__vk"></div>
+				</a>
+			</div>
+			<div class="footer__copy"><a href="javascript:void(0);" class="footer__copy-logo">24ttl</a>
+				<div class="footer__copy-est"><span>est.</span>  <span class="footer__copy_font_reg">2007</span>
+				</div>
+				<div class="footer__copy-law">Все права защищены. Москва 2015</div>
+			</div>
+		</footer>
+		</div>
+		<script src="assets/scripts/debug.js?1435159549530"></script>
+		<script src="assets/scripts/common.min.js?1435159549530"></script>
+	</body>
+
+</html>

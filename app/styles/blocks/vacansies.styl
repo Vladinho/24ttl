@@ -1,0 +1,362 @@
+.vacansies
+	padding 110px 0 90px
+	background url('../images/vacansies-bg.jpg') 0 0 no-repeat
+
+	&-container
+		margin 0 auto
+		width 960px
+		height 400px
+		clearfix()
+		background-color #fff
+		color #000
+
+	&__title
+		font-family officina-book-r
+		font-size 17px
+		letter-spacing 3px
+
+	&__descr
+		padding 40px 5% 40px 8.4%
+		float left
+		width 40.63%
+		height 100%
+		border-right 3px solid #e5e5e5
+
+		&-post
+			position relative
+			margin-top 30px
+			margin-bottom 12px
+			padding-bottom 35px
+			font-family ubuntu-b
+			font-size 30px
+			text-transform uppercase
+
+			&:before
+				position absolute
+				bottom 0
+				left 0
+				size(30px, 4px)
+				content ''
+				background-color #000
+
+		&-item
+			font-family ubuntu-l
+			font-size 16px
+			letter-spacing .5px
+
+			& + &
+				margin-top 13px
+
+	&__form
+		margin-left 40.63%
+		padding 40px 8.3%
+		height 100%
+
+	&-wrap
+		margin-top 34px
+		font-size 0
+
+	&__input
+		padding 0px 20px
+		width 190px
+		height 45px
+		display inline-block
+		font-family ubuntu-l
+		font-size 14px
+		line-height 45px
+		color rgba(0, 0, 0, .78)
+		text-overflow ellipsis
+		vertical-align top
+		background-color #f3f3f3
+		border none
+
+		&::-webkit-input-placeholder
+			color rgba(0, 0, 0, .78)
+
+		&::-moz-placeholder
+			color rgba(0, 0, 0, .78)
+
+		&:-moz-placeholder
+			color rgba(0, 0, 0, .78)
+
+		&:-ms-input-placeholder
+			color rgba(0, 0, 0, .78)
+
+
+		&:focus
+		&:hover
+			color rgba(0, 0, 0, 1)
+
+		&:focus
+
+			&::-webkit-input-placeholder
+				color rgba(0, 0, 0, 0)
+
+			&::-moz-placeholder
+				color rgba(0, 0, 0, 0)
+
+			&:-moz-placeholder
+				color rgba(0, 0, 0, 0)
+
+			&:-ms-input-placeholder
+				color rgba(0, 0, 0, 0)
+
+	&__file
+		position relative
+		margin 0 11px 0 18px
+		overflow hidden
+		size(45px)
+		display inline-block
+		background-color #f3f3f3
+		vertical-align top
+
+		&:hover
+			cursor pointer
+
+			& + .vacansies__file-text
+				opacity 1
+
+		&:before
+		&:after
+			position absolute
+			z-index 0
+			top 50%
+			left 50%
+			content ''
+			background-color #626262
+			cursor pointer
+
+		&:before
+			size(30px, 2px)
+			margin-top -1px
+			margin-left -15px
+
+		&:after
+			size(2px, 30px)
+			margin-top -15px
+			margin-left -1px
+
+		input
+			position relative
+			z-index 1
+			margin 0
+			margin-left -300px
+			padding 0
+			font-size 45px
+			line-height 45px
+			border none
+			opacity 0
+			filter unquote('progid:DXImageTransform.Microsoft.Alpha(opacity=0)')
+
+	&__file-text
+		padding 7px 0px 6px
+		display inline-block
+		font-family ubuntu-l
+		font-size 14px
+		line-height 16px
+		color #000
+		opacity .2
+		transition opacity .3s ease
+		will-change opacity
+
+	&__textarea
+		margin-top 17px
+		padding 20px
+		width 100%
+		height 130px
+		font-family ubuntu-l
+		font-size 14px
+		color rgba(0, 0, 0, .78)
+		background-color #f3f3f3
+		border none
+
+		&:focus
+		&:hover
+			color rgba(0, 0, 0, 1)
+
+	&__btn
+		margin-top 19px
+		float right
+		size(145px, 45px)
+		font-family ubuntu-l
+		font-size 16px
+		line-height 45px
+		text-align center
+		color #fff
+		text-transform uppercase
+		background-color #21775e
+		border none
+
+	&__icon-file
+		position relative
+		margin-top 19px
+		size(45px)
+		background-color #f3f3f3
+
+	&__icon-close
+		position absolute
+		top -8px
+		right -6px
+		size(16px)
+		border 2px solid #292929
+		border-radius 50%
+		cursor pointer
+
+		&:before
+		&:after
+			position absolute
+			top 5px
+			left -1px
+			size(14px, 1px)
+			content ''
+			background-color #292929
+
+		&:before
+			transform rotate(45deg)
+
+		&:after
+			transform rotate(-45deg)
+
+	&__icon-doc
+		position absolute
+		top 8px
+		left 11px
+		size(20px, 26px)
+		border 2px solid #292929
+
+		&:before
+			position absolute
+			z-index 1
+			top -2px
+			right -2px
+			size(7px)
+			content ''
+			border-left 2px solid #292929
+			border-bottom 2px solid #292929
+			background-color #f3f3f3
+
+		&:after
+			position absolute
+			z-index 2
+			top 1px
+			right -3px
+			size(11px, 2px)
+			content ''
+			background-color #292929
+			transform rotate(45deg)
+
+@media only screen and (max-width: 320px)
+	.vacansies
+		padding 50px 0px 80px
+
+		&-container
+			width 100%
+			height auto
+
+		&__title
+			font-size 14px
+
+		&__descr
+			padding 20px 20px 0
+			float none
+			width 100%
+			height auto
+			border-right none
+			border-bottom 2px solid #e5e5e5
+
+			&-post
+				margin 15px 0
+				padding-bottom 20px
+				font-size 18px
+
+			&-item
+				font-size 14px
+
+				& + &
+					margin-top 10px
+
+			&-list
+				margin-bottom 38px
+
+		&__form
+			margin-left 0
+			padding 20px 20px 0
+			height auto
+
+		&-wrap
+			position relative
+			margin-top 12px
+
+		&__input
+			padding 0 16px
+			width 100%
+			height 40px
+			font-size 12px
+			line-height 40px
+
+		&__file
+			position absolute
+			top 160px
+			left 0
+			margin 0
+			size(40px)
+
+			$cross-size = 20px
+			&:before
+				width $cross-size
+				margin-left -($cross-size / 2)
+
+			&:after
+				height $cross-size
+				margin-top -($cross-size / 2)
+
+		&__file-text
+			position absolute
+			top 160px
+			left 50px
+			padding 4px 0 4px
+			opacity 1
+
+		&__textarea
+			margin-top 10px
+			margin-bottom 60px
+			height 100px
+
+		&__btn
+			position absolute
+			bottom -60px
+			left 50%
+			margin 0
+			margin-left -72px
+			height 40px
+			line-height 40px
+			font-size 14px
+
+		&__icon-wrap
+			margin 0 -20px
+			padding 28px 0
+			text-align center
+			background-color #292929
+
+		&__icon-file
+			margin 0
+			display inline-block
+
+		&__icon-close
+			background-color #fff
+
+@media only screen and (min-width: 321px) and (max-width: 1099px)
+	.vacansies
+		padding 50px 0
+
+		&-container
+			width 100%
+
+		&__descr
+			padding 40px 5% 40px 10%
+			width 40.9%
+			border-width 1px
+
+		&__form
+			padding 40px 10.3% 0 8.3%
+

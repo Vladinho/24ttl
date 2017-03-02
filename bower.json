@@ -1,0 +1,13 @@
+{
+  "name": "24ttl",
+  "version": "1.0.0",
+  "devDependencies": {
+    "jquery": "~1.11.3",
+    "Swiper": "https://github.com/nolimits4web/Swiper.git#~2.7.6",
+    "respond": "https://github.com/scottjehl/Respond.git#~1.4.2",
+    "video.js": "https://github.com/videojs/video.js.git#~4.12.9"
+  },
+  "resolutions": {
+    "jquery": ">=1.11.3"
+  }
+}

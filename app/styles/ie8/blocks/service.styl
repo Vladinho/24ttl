@@ -1,0 +1,25 @@
+.service
+
+	&__item
+
+		&-btn
+			border none
+			spriteImage($icon-question-white)
+			spritePosition($icon-question-white)
+
+			&_color_black
+				spritePosition($icon-question-black)
+
+			&:before
+				display none
+
+		&-separator
+			spriteImage($icon-cross-black)
+			spritePosition($icon-cross-black)
+
+			&_color_white
+				spritePosition($icon-cross-white)
+
+			&:before
+			&:after
+				display none

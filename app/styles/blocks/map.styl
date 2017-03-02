@@ -1,0 +1,107 @@
+.map
+	position relative
+	z-index 0
+	padding 162px 0px
+	width 100%
+	height 600px
+	background-color #252525
+
+	&-wrap
+		position relative
+		z-index 2
+		margin 0 auto
+		width 170px
+		height 270px
+		text-align center
+		opacity 1
+		filter unquote('progid:DXImageTransform.Microsoft.Alpha(opacity=100)')
+		transition opacity .5s ease
+
+		&_state_hide
+			opacity 0
+			filter unquote('progid:DXImageTransform.Microsoft.Alpha(opacity=0)')
+
+	&__icon
+		margin 0 auto
+		sprite($icon-map)
+
+	&__title
+		margin-top 9px
+		font-family officina-book-r
+		font-size 20px
+		color #fff
+		letter-spacing 4px
+		text-transform uppercase
+
+	&__address
+		margin-top 22px
+		font-family ubuntu-r
+		font-size 14px
+		line-height 18px
+		color #fff
+
+	&__btn
+		position relative
+		margin-top 103px
+		width 100%
+		height 45px
+		font-family ubuntu-l
+		font-size 16px
+		line-height 41px
+		color #f1655c
+		text-transform uppercase
+		text-align center
+		border 2px solid #f1655c
+		background-color $trn
+		cursor pointer
+		transition all .3s ease
+
+		&:hover
+			color #000
+			background-color #f1655c
+
+		&:before
+			position absolute
+			top -8px
+			left 50%
+			margin-left -6px
+			content ''
+			border-left 6px solid $trn
+			border-right 6px solid $trn
+			border-bottom 8px solid #f1655c
+
+	&__plan
+		position absolute
+		z-index 0
+		top 0
+		left 0
+		width 100%
+		height 100%
+
+	&__bg
+		position absolute
+		z-index 1
+		top 0
+		left 0
+		width 100%
+		height 100%
+		background-color #000
+		opacity .8
+		filter unquote('progid:DXImageTransform.Microsoft.Alpha(opacity=80)')
+		transition opacity .5s ease
+
+		&_state_hide
+			opacity 0
+			filter unquote('progid:DXImageTransform.Microsoft.Alpha(opacity=0)')
+
+@media only screen and (max-width: 1099px)
+	.map
+		padding 135px 0px
+		height 500px
+
+		&__btn
+			margin-top 77px
+
+@media only screen and (min-width: 1100px) and (max-width: 1199px)
+	.map
+		height 550px
